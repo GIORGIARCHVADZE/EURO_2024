@@ -6,17 +6,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function createTables(numberOfGroups) {
     const container = document.getElementById('tables-container');
-    const flags = ["georgia.jpg", "italy.jpg", "germany.jpg", "france.jpg"];
-    
+    const flags = ["georgia.jpg", "italy.jpg", "germany.jpg", "france.jpg", "პორტუგალია.jpg"];  // Add more flags as needed
+
     for (let i = 0; i < numberOfGroups; i++) {
         const table = document.createElement('table');
         const caption = document.createElement('caption');
-        caption.textContent = `Group ${String.fromCharCode(65 + i)}`;
+        caption.textContent = `ჯგუფი ${String.fromCharCode(65 + i)}`;
+        caption.className = "Groups-Name"
         table.appendChild(caption);
 
         const thead = document.createElement('thead');
         const trHead = document.createElement('tr');
-        const headers = ['Team', 'Played', 'Won', 'Drawn', 'Lost', 'Goals For', 'Goals Against', 'Goal Difference', 'Points'];
+        const headers = ['გუნდები', 'თამაში', 'მოგება', 'ფრე', 'წაგება', 'გატანილი ბ', 'მიღებული ბ', 'ბურთების სხვაობა', 'ქულა', 'შედეგები'];
         headers.forEach(header => {
             const th = document.createElement('th');
             th.textContent = header;
@@ -30,16 +31,29 @@ function createTables(numberOfGroups) {
             const tr = document.createElement('tr');
             const tdTeam = document.createElement('td');
             tdTeam.className = "team-info team-name";
+
+            // Creating an image element for flag
             const img = document.createElement('img');
             img.className = "flag";
-            img.src = flags[j - 1];
-            const inputTeam = document.createElement('input');
-            inputTeam.className = "team-name-input"
-            inputTeam.type = 'text';
-            inputTeam.placeholder = `Enter Team ${j}`;
-            inputTeam.name = `team${j}G${i+1}`;
+            img.alt = 'flag';
+
+            // Creating a dropdown for flag selection
+            const selectFlag = document.createElement('select');
+            selectFlag.className = "flag-select";
+            selectFlag.name = `team${j}G${i+1}Flag`;
+            flags.forEach(flag => {
+                const option = document.createElement('option');
+                option.value = flag;
+                option.textContent = flag.split('.')[0];  // Display the flag name without extension
+                selectFlag.appendChild(option);
+            });
+
+            selectFlag.addEventListener('change', function() {
+                img.src = this.value;
+            });
+
             tdTeam.appendChild(img);
-            tdTeam.appendChild(inputTeam);
+            tdTeam.appendChild(selectFlag);
             tr.appendChild(tdTeam);
 
             ['played', 'Won', 'Drawn', 'Lost', 'GoalsFor', 'GoalsAgainst', 'GoalDifference', 'Points'].forEach(field => {
@@ -54,6 +68,17 @@ function createTables(numberOfGroups) {
                 td.appendChild(input);
                 tr.appendChild(td);
             });
+
+          
+            // Adding match result input
+            const tdResult = document.createElement('td');
+            const inputResult = document.createElement('input');
+            inputResult.className = "match-result";
+            inputResult.type = 'text';
+            inputResult.name = `team${j}G${i+1}MatchResult`;
+            tdResult.appendChild(inputResult);
+            tr.appendChild(tdResult);
+
             tbody.appendChild(tr);
         }
         table.appendChild(tbody);
@@ -63,21 +88,25 @@ function createTables(numberOfGroups) {
 
 function saveData() {
     const data = {};
-    const inputs = document.querySelectorAll('input');
+    const inputs = document.querySelectorAll('input, select');
     inputs.forEach(input => {
         data[input.name] = input.value;
     });
     localStorage.setItem('footballData', JSON.stringify(data));
-    alert('Data saved successfully!');
+    alert('მონაცემები შენახულია!');
 }
 
 function loadData() {
     const data = JSON.parse(localStorage.getItem('footballData'));
     if (data) {
-        const inputs = document.querySelectorAll('input');
+        const inputs = document.querySelectorAll('input, select');
         inputs.forEach(input => {
             if (data[input.name] !== undefined) {
                 input.value = data[input.name];
+                if (input.className === 'flag-select') {
+                    const img = input.previousSibling;  // Assuming img is right before the select element
+                    img.src = input.value;
+                }
             }
         });
     }

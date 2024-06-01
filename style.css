@@ -49,3 +49,15 @@ body {
     text-align: center;
     color: aliceblue;
 }
+.flag-select{
+    width: 150px;
+   height: 20px;
+   
+}
+.match-result{
+    width: 100px;
+}
+.Groups-Name {
+    color: white;
+    text-align: left;
+}
