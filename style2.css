@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container table {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container th,
+.container td {
+    padding: 8px;
+}
+
+.container .team-info {
+    display: flex;
+    align-items: center;
+}
+
+.container .flag {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+    margin-right: 5px;
+}
+#tables-container{
+    max-width: 1450px;
+    background-image: url("foni.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image: left;
+}   
+
+.team-name {
+    display: flex;
+    justify-content: left;
+   
+}
+.team-name-input{
+   width: 150px;
+   height: 20px;
+}
+body {
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,26,174,1) 35%, rgba(0,212,255,1) 100%);
+}
+.satauri {
+    text-align: center;
+    color: aliceblue;
+}
