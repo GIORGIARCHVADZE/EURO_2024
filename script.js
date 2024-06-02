@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function createTables(numberOfGroups) {
     const container = document.getElementById('tables-container');
-    const flags = ["georgia.jpg", "italy.jpg", "germany.jpg", "france.jpg", "პორტუგალია.jpg"];  // Add more flags as needed
+    const flags = ["ავსტრია.jpg", "ალბანეთი.jpg", "ბელგია.jpg", "გერმანია.jpg", "დანია.jpg", "ესპანეთი.jpg", "თურქეთი.jpg", "ინგლისი.jpg", "იტალია.jpg", "ნიდერლანდი.jpg", "პოლონეთი.jpg", "პორტუგალია.jpg", "რუმინეთი.jpg", "საფრანგეთი.jpg", "საქართველო.jpg", "სერბეთი.jpg", "სლოვაკეთი.jpg", "სლოვენია.jpg", "უკრაინა.jpg", "უნგრეთი.jpg", "შვეიცარია.jpg", "შოტლანდია.jpg", "ჩეხეთი.jpg", "ხორვატია.jpg"];  // Add more flags as needed
 
     for (let i = 0; i < numberOfGroups; i++) {
         const table = document.createElement('table');
