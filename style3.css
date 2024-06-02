@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,26,174,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"], select {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.goals-team11{
+    width: 80px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+   
+}
+a:hover {
+    border: 1px solid rgb(161, 158, 158);
+    background-color: rgb(139, 151, 241);
+    border-radius: 10px;
+    height: 15px;
+    padding: 5px;
+  }
