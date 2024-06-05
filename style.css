@@ -32,6 +32,7 @@
     backdrop-filter: blur(650px); /* Adjust the blur radius as needed */
     border-radius: 10px;
     -webkit-backdrop-filter: blur(8px); /* For Safari */
+    margin-top: 10px;
 }
 
 .team-name {
@@ -64,5 +65,13 @@ body {
 .Groups-Name {
     color: white;
     text-align: left;
+}
+.link{
+    text-decoration: none;
+    color  :white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
 }
 
