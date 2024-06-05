@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Football Championship Bracket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>2024 წლის ევროპის ჩემპიონატის თამაშები</h1>
+    <a class="link" href="/EURO_2024/index.html">მთავარი გვერდი</a>
+    <button id="saveButton">Save</button>
+    <button id="loadButton">Load</button>          
+    <div class="bracket">
+        <div class="round round-16">
+            <h2>Round of 1/8</h2>
+            <div class="match">
+                <div class="match-title">Match 1</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">B1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">A3/D3/E3/F3</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 2</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">A1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">C2</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 3</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">E1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">A3/B3/C3/D3</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 4</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">D1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">F2</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 5</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">F1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">A3/B3/C3</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 6</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">D2</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">E2</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 7</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">C1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">D3/E3/F3</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="match">
+                <div class="match-title">Match 8</div> 
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">A2</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td class="team-label">B2</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <div class="round round-16">
+            <h2>Round of 1/4</h2>
+            <div class="match">
+                <div class="match-title">Match 9</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 1</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 2</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="match">
+                <div class="match-title">Match 10</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 3</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 4</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="match">
+                <div class="match-title">Match 11</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 5</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 6</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="match">
+                <div class="match-title">Match 12</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 7</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 8</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="round semi-final">
+            <h2>Semi Final</h2>
+            <div class="match">
+                <div class="match-title">Match 13</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 9</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 10</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="match">
+                <div class="match-title">Match 14</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 11</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 12</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="round final">
+            <h2>Final</h2>
+            <div class="match">
+                <div class="match-title">Match 15</div>
+                <table>
+                    <div class="date-time" colspan="3">
+                        <input type="date" class="match-date" />
+                    </div>
+                    <tr>
+                        <td rowspan="2" class="team-label">Winner of Match 13</td>
+                        <td rowspan="2" class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td rowspan="2" class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="team-label">Winner of Match 14</td>
+                        <td class="team-select-container">
+                            <select class="team-select"></select>
+                        </td>
+                        <td class="score-input-container">
+                            <input type="number" class="score-input" placeholder="0" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <button id="saveButton">Save</button>
+    <script src="script.js"></script>
+</body>
+</html>
